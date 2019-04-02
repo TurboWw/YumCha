@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>list</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/style.css">
+
+  <!-- nav -->
+  <script src="../static/js/jquery.min.js"></script>
+  <script src="../static/js/nav.js"></script>
+  <!-- WOW -->
+  <link rel="stylesheet" href="../static/CSS/animate.css">
+  <script src="../static/js/wow.min.js"></script>
+  <script>
+      if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+          new WOW().init();
+      };
+  </script>
+  <!-- WOW结束 -->
+</head>
+<body>
+  <header class="second_header flipInX animated" data-wow-offset="400">
+    <nav>
+
+        <a href="#" class="menubtn"></a>
+
+        <img src="../static/images/logo.png" alt="">
+        <ul  id="hamburgermenu">
+            <li><a href="../html/index.html">首页</a></li>
+            <li><a href="../html/circle.html">圈子</a></li>
+            <li><a href="../html/order.html">点餐</a></li>
+            <li><a href="../html/book.html">预约</a></li>
+            <li class="nav_choose"><a href="../html/list.html">订单</a></li>
+            <a href="../html/login.html">登录</a>
+        </ul>
+    </nav>
+    <h1 class="wow zoomIn" data-wow-delay=".2s">查看订单</h1>
+  </header>
+
+  <main>
+    <div class="list_container" >
+      <div class="list_left wow fadeInUp" data-wow-delay=".4s">
+        <div class="group">
+          <p class="title">得闲饮茶</p>
+          <p class="title">我的订单</p>
+          <ul class="link-ul"><li><a href="">全部订单</a><i class="icon-right"></i></li><li><a href="">待付款</a><i class="icon-right"></i></li><li><a href="">待使用</a><i class="icon-right"></i></li><li><a href="">待评价</a><span class="num">7</span><i class="icon-right"></i></li><li><a href="">退款/售后</a><i class="icon-right"></i></li></ul>
+        </div>
+        <div class="group">
+          <p class="title">我的收藏</p>
+          <ul class="link-ul"><li><a href="">收藏的商家</a><span class="num"></span><i class="icon-right"></i></li><li><a href="">收藏的团购</a><span class="num"></span><i class="icon-right"></i></li></ul>
+        </div>
+        <div class="group">
+          <p class="title">抵用券</p>
+          <ul class="link-ul"><li><a href="">可用券</a><span class="num"></span><i class="icon-right"></i></li><li><a href="">失效券</a><span class="num"></span><i class="icon-right"></i></li></ul>
+        </div>
+        <div class="group">
+          <p class="title">个人信息</p>
+          <ul class="link-ul"><li><a href="">账户设置</a><span class="num"></span><i class="icon-right"></i></li></ul>
+        </div>
+
+      </div>
+
+      <div class="list_right wow fadeInUp" data-wow-delay=".6s">
+          <div class="list_head"><ul class="list_ul"><li class="active">全部订单</li><li class="">待付款</li><li class="">待使用</li><li class="">待评价<span class="num">7</span></li><li class="">退款/售后</li></ul></div>
+
+          <div class="list_body"> 
+            <div class="list_item">
+              <div class="item-img"><img src="../static/images/list1.jpg"></div>
+              <div class="item-info">
+                <p class="item-title">点都德（花城店）-招牌虾饺，脆皮红米肠，糯米鸡</p>
+                <p class="info">截止时间：2019-05-17</p>
+                <p class="info">数量：5</p>
+              </div>
+              <div class="item-price">总价：¥69.80</div>
+              <div class="item-status">待消费</div>
+            </div>
+            <div class="list_item">
+                <div class="item-img"><img src="../static/images/list2.jpg"></div>
+                <div class="item-info">
+                  <p class="item-title">金广名厨-茶楼预约</p>
+                  <p class="info">截止时间：2019-05-17</p>
+                </div>
+                <div class="item-price">总价：¥0.00</div>
+                <div class="item-status">待使用</div>
+            </div>
+            <div class="list_item">
+                  <div class="item-img"><img src="../static/images/list3.jpg"></div>
+                  <div class="item-info">
+                    <p class="item-title">欧邦茗點居·全天茶市-欧邦三人餐</p>
+                    <p class="info">数量：1</p>
+                  </div>
+                  <div class="item-price">总价：¥109.80</div>
+                  <div class="item-status">待评价</div>
+            </div>
+            <div class="list_item">
+              <div class="item-img"><img src="../static/images/list4.jpg"></div>
+              <div class="item-info">
+                <p class="item-title">鼎悦酒家-4人套餐，提供免费WiFi</p>
+                <p class="info">截止时间：2019-05-17</p>
+                <p class="info">数量：1</p>
+              </div>
+              <div class="item-price">总价：¥269.00</div>
+              <div class="item-status">待评价</div>
+            </div>
+            <div class="list_item">
+                <div class="item-img"><img src="../static/images/list5.jpg"></div>
+                <div class="item-info">
+                  <p class="item-title">钟记港式茶餐厅-单人商务套餐</p>
+                  <p class="info">数量：1</p>
+                </div>
+                <div class="item-price">总价：¥19.80</div>
+                <div class="item-status">待评价</div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </main>
+
+  <footer class="wow  fadeInUp animated" data-wow-offset="100">
+    <a href="">立即下载</a>  <a href="">关于我们</a>  <a href="">关注微信</a> <a href="">联系我们</a>  <a href="">用户协议</a> 
+    <p>京ICP备11017824号-4 京ICP证130164号 京公网安备11010502000501号 京网文[2016]617</p>
+    <p>Copyright © 2013-2019 得闲饮茶  yumcha.com</p>
+  </footer>
+
+
+<script type="text/javascript">
+  $(function(){
+      $(".list_ul li").click(function() {
+          $(this).siblings('li').removeClass('active');  // 删除其兄弟元素的样式
+          $(this).addClass('active');                    // 为点击元素添加类名
+      });
+  }); 
+  </script>
+</body>
+</html>

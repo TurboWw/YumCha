@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/style.css">
+    
+    <!-- nav -->
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/nav.js"></script>
+    <!-- WOW -->
+    <link rel="stylesheet" href="../static/CSS/animate.css">
+    <script src="../static/js/wow.min.js"></script>
+    <script>
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+            new WOW().init();
+        };
+    </script>
+    <!-- WOW结束 -->
+</head>
+<body>
+    <header class="login_header zoomIn animated" data-wow-offset="400">
+            <a href="#" class="menubtn"></a>
+            <nav>
+                    <img src="../static/images/logo.png" alt="">
+                    <ul  id="hamburgermenu">
+                        <li><a href="../html/index.html">首页</a></li>
+                        <li><a href="../html/circle.html">圈子</a></li>
+                        <li><a href="../html/order.html">点餐</a></li>
+                        <li><a href="../html/book.html">预约</a></li>
+                        <li><a href="../html/list.html">订单</a></li>
+                        <a href="../html/login.html">登录</a>
+                    </ul>
+            </nav>
+
+            <div class="login_container wow bounceIn animated">
+                <img src="../static/images/login_2.png">
+
+                <form>
+                    <img src="../static/images/login_3.png"><br>
+                    <input type="text" placeholder="请输入账号"><br>
+                    <input type="password" placeholder="请输入密码">
+                    <div class="signOrforget">
+                        <a id="sign">立即注册</a>
+                        <a href="">忘记密码？</a>
+                    </div>
+                    <button id="btn">登录</button>
+                </form>
+            </div>
+       
+
+            <div class="login_foot wow fadeInUp animated" data-wow-delay=".6s">
+    <a href="">立即下载</a>  <a href="">关于我们</a>  <a href="">关注微信</a> <a href="">联系我们</a>  <a href="">用户协议</a> 
+                <p>京ICP备11017824号-4 京ICP证130164号 京公网安备11010502000501号 京网文[2016]617</p>
+                <p>Copyright © 2013-2019 得闲饮茶  yumcha.com</p>
+            </div>
+
+    </header>
+
+    <script>
+        var flag= true;
+        var isOn = true;
+        var sign= document.getElementById("sign");
+        var btn = document.getElementById("btn");
+        document.getElementById("sign").onclick=function(){
+            btn.innerHTML = (flag = !flag) ? '登录' : '注册';
+            sign.innerHTML = (isOn = !isOn) ? '立即注册' : '立即登录';
+        }
+    </script>
+
+</body>
+</html>

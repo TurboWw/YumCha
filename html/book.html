@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/style.css">
+    <!-- nav -->
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/nav.js"></script>
+  <!-- WOW -->
+  <link rel="stylesheet" href="../static/CSS/animate.css">
+  <script src="../static/js/wow.min.js"></script>
+  <script>
+      if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+          new WOW().init();
+      };
+  </script>
+  <!-- WOW结束 -->
+</head>
+<body>
+  <header class="second_header flipInX animated" data-wow-offset="400">
+      <a href="#" class="menubtn"></a>
+    <nav>
+        <img src="../static/images/logo.png" alt="">
+        <ul id="hamburgermenu">
+            <li><a href="../html/index.html">首页</a></li>
+            <li><a href="../html/circle.html">圈子</a></li>
+            <li><a href="../html/order.html">点餐</a></li>
+            <li class="nav_choose"><a href="../html/book.html">预约</a></li>
+            <li><a href="../html/list.html">订单</a></li>
+            <a href="../html/login.html">登录</a>
+        </ul>
+    </nav>
+    <h1 class="wow zoomIn" data-wow-delay=".2s">预约茶楼</h1>
+  </header>
+
+  <div class="selcet book_selcet flipInY animated" data-wow-delay=".4s">
+      <span class="selcet_choose">精选茶楼</span>
+      <span>人气评价</span>
+      <span>距离远近</span>
+  </div>
+
+  <main>
+      <div class="book_container">
+
+        <div class="bookBoxA wow fadeInUp">
+          <img src="../static/images/book1.jpg">
+          <div class="bookdetail">
+            <h3>点都徳茶楼(花城店)</h3>
+            <p>联系电话：020-37266163</p>
+            <p>地址：天河区花城大道16号（凯蓝大厦2楼）</p>
+          </div>
+        </div>
+
+        <div class="bookBoxA wow fadeInUp" data-wow-delay=".2s">
+            <img src="../static/images/book5.jpg">
+            <div class="bookdetail">
+              <h3>凤朝凰茶馆</h3>
+              <p>联系电话：020-34210999</p>
+              <p>地址：广州市海珠区上渡路海琴湾6号2卡2楼</p>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="book_container">
+
+          <div class="bookBoxA wow fadeInUp" data-wow-delay=".4s">
+            <img src="../static/images/book2.jpg">
+            <div class="bookdetail">
+              <h3>随園茶楼</h3>
+              <p>联系电话：020-37266163</p>
+              <p>地址：天河区花城大道16号（凯蓝大厦2楼）</p>
+            </div>
+          </div>
+  
+          <div class="bookBoxA wow fadeInUp" data-wow-delay=".6s">
+              <img src="../static/images/book3.jpg">
+              <div class="bookdetail">
+                <h3>广州酒家（百福广场店）</h3>
+                <p>联系电话：020-38809138</p>
+                <p>地址：广州市天河区体育东路112号百福广场1层</p>
+              </div>
+            </div>
+  
+      </div>
+
+      <div class="book_container">
+
+            <div class="bookBoxA wow fadeInUp" data-wow-delay=".8s">
+              <img src="../static/images/book4.jpg">
+              <div class="bookdetail">
+                <h3>四季茶居(花城店)</h3>
+                <p>联系电话：020-82517168</p>
+                <p>地址：天河区黄村路自编6号智汇商业城4楼</p>
+              </div>
+            </div>
+    
+            <div class="bookBoxA wow fadeInUp" data-wow-delay="1s">
+                <img src="../static/images/book6.jpg">
+                <div class="bookdetail">
+                  <h3>满点茶楼</h3>
+                  <p>联系电话：020-39120788</p>
+                  <p>地址：南村镇文明路5号建奇大厦首层铺（南村商会、南村车站旁）</p>
+                </div>
+              </div>
+    
+      </div>
+
+      <ul class="pagination wow fadeInUp animated " data-wow-offset="10" data-wow-delay=".2s">
+          <li><a class="active" href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">»</a></li>
+      </ul>
+  </main>
+
+  <footer class="wow  fadeInUp animated" data-wow-offset="100">
+    <a href="">立即下载</a>  <a href="">关于我们</a>  <a href="">关注微信</a> <a href="">联系我们</a>  <a href="">用户协议</a> 
+    <p>京ICP备11017824号-4 京ICP证130164号 京公网安备11010502000501号 京网文[2016]617</p>
+    <p>Copyright © 2013-2019 得闲饮茶  yumcha.com</p>
+  </footer>
+
+  <script type="text/javascript">
+    $(function(){
+        $(".selcet span").click(function() {
+            $(this).siblings('span').removeClass('selcet_choose');  // 删除其兄弟元素的样式
+            $(this).addClass('selcet_choose');                    // 为点击元素添加类名
+        });
+    }); 
+    </script>
+</body>
+</html>
